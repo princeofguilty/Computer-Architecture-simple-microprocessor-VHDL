@@ -1,0 +1,568 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.04 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.04 secs
+ 
+--> 
+Reading design: main.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "main.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "main"
+Output Format                      : NGC
+Target Device                      : xc3s100e-5-vq100
+
+---- Source Options
+Top Module Name                    : main
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "/media/raven/yaoya_rozo/Semster-6/ISE/CA-Project3/Pack.vhd" in Library work.
+Architecture pack of Entity pack is up to date.
+Compiling vhdl file "/media/raven/yaoya_rozo/Semster-6/ISE/CA-Project3/MUX8X1_v8.vhd" in Library work.
+Architecture behavioral of Entity mux8x1_v8 is up to date.
+Compiling vhdl file "/media/raven/yaoya_rozo/Semster-6/ISE/CA-Project3/DEC2X4.vhd" in Library work.
+Architecture behavioral of Entity dec2x4 is up to date.
+Compiling vhdl file "/media/raven/yaoya_rozo/Semster-6/ISE/CA-Project3/DEC3X8.vhd" in Library work.
+Architecture behavioral of Entity dec3x8 is up to date.
+Compiling vhdl file "/media/raven/yaoya_rozo/Semster-6/ISE/CA-Project3/Encoder4X2.vhd" in Library work.
+Architecture bhv of Entity encoder4x2 is up to date.
+Compiling vhdl file "/media/raven/yaoya_rozo/Semster-6/ISE/CA-Project3/MUX4X1_v8.vhd" in Library work.
+Architecture behavioral of Entity mux4x1_v8 is up to date.
+Compiling vhdl file "/media/raven/yaoya_rozo/Semster-6/ISE/CA-Project3/REG.vhd" in Library work.
+Architecture behavioral of Entity reg is up to date.
+Compiling vhdl file "/media/raven/yaoya_rozo/Semster-6/ISE/CA-Project3/MEM.vhd" in Library work.
+Architecture behavioral of Entity mem is up to date.
+Compiling vhdl file "/media/raven/yaoya_rozo/Semster-6/ISE/CA-Project3/ALU.vhd" in Library work.
+Architecture behavioral of Entity alu is up to date.
+Compiling vhdl file "/media/raven/yaoya_rozo/Semster-6/ISE/CA-Project3/Counter4.vhd" in Library work.
+Architecture count_arch of Entity counter4 is up to date.
+Compiling vhdl file "/media/raven/yaoya_rozo/Semster-6/ISE/CA-Project3/Control_Unit.vhd" in Library work.
+Architecture behavioral of Entity control_unit is up to date.
+Compiling vhdl file "/media/raven/yaoya_rozo/Semster-6/ISE/CA-Project3/Encoder8X3.vhd" in Library work.
+Architecture encode of Entity encoder8x3 is up to date.
+Compiling vhdl file "/media/raven/yaoya_rozo/Semster-6/ISE/CA-Project3/COM_BUS.vhd" in Library work.
+Architecture behavioral of Entity com_bus is up to date.
+Compiling vhdl file "/media/raven/yaoya_rozo/Semster-6/ISE/CA-Project3/main.vhd" in Library work.
+Architecture behavioral of Entity main is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <main> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <REG> in library <work> (architecture <behavioral>) with generics.
+	n = 8
+
+Analyzing hierarchy for entity <MEM> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <ALU> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Counter4> in library <work> (architecture <count_arch>).
+
+Analyzing hierarchy for entity <Control_Unit> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Encoder8x3> in library <work> (architecture <encode>).
+
+Analyzing hierarchy for entity <COM_BUS> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Encoder4X2> in library <work> (architecture <bhv>).
+
+Analyzing hierarchy for entity <MUX4X1_v8> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <DEC2X4> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <DEC3X8> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <MUX8X1_v8> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <main> in library <work> (Architecture <behavioral>).
+Entity <main> analyzed. Unit <main> generated.
+
+Analyzing generic Entity <REG> in library <work> (Architecture <behavioral>).
+	n = 8
+Entity <REG> analyzed. Unit <REG> generated.
+
+Analyzing Entity <MEM> in library <work> (Architecture <behavioral>).
+WARNING:Xst:790 - "/media/raven/yaoya_rozo/Semster-6/ISE/CA-Project3/MEM.vhd" line 41: Index value(s) does not match array range, simulation mismatch.
+INFO:Xst:1433 - Contents of array <ROM> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+Entity <MEM> analyzed. Unit <MEM> generated.
+
+Analyzing Entity <ALU> in library <work> (Architecture <behavioral>).
+Entity <ALU> analyzed. Unit <ALU> generated.
+
+Analyzing Entity <Encoder4X2> in library <work> (Architecture <bhv>).
+Entity <Encoder4X2> analyzed. Unit <Encoder4X2> generated.
+
+Analyzing Entity <MUX4X1_v8> in library <work> (Architecture <behavioral>).
+Entity <MUX4X1_v8> analyzed. Unit <MUX4X1_v8> generated.
+
+Analyzing Entity <Counter4> in library <work> (Architecture <count_arch>).
+Entity <Counter4> analyzed. Unit <Counter4> generated.
+
+Analyzing Entity <Control_Unit> in library <work> (Architecture <behavioral>).
+Entity <Control_Unit> analyzed. Unit <Control_Unit> generated.
+
+Analyzing Entity <DEC2X4> in library <work> (Architecture <behavioral>).
+Entity <DEC2X4> analyzed. Unit <DEC2X4> generated.
+
+Analyzing Entity <DEC3X8> in library <work> (Architecture <behavioral>).
+Entity <DEC3X8> analyzed. Unit <DEC3X8> generated.
+
+Analyzing Entity <Encoder8x3> in library <work> (Architecture <encode>).
+Entity <Encoder8x3> analyzed. Unit <Encoder8x3> generated.
+
+Analyzing Entity <COM_BUS> in library <work> (Architecture <behavioral>).
+Entity <COM_BUS> analyzed. Unit <COM_BUS> generated.
+
+Analyzing Entity <MUX8X1_v8> in library <work> (Architecture <behavioral>).
+Entity <MUX8X1_v8> analyzed. Unit <MUX8X1_v8> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <REG>.
+    Related source file is "/media/raven/yaoya_rozo/Semster-6/ISE/CA-Project3/REG.vhd".
+WARNING:Xst:647 - Input <CLR> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 8-bit register for signal <temp>.
+    Found 8-bit addsub for signal <temp$share0000>.
+    Summary:
+	inferred   8 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+Unit <REG> synthesized.
+
+
+Synthesizing Unit <MEM>.
+    Related source file is "/media/raven/yaoya_rozo/Semster-6/ISE/CA-Project3/MEM.vhd".
+WARNING:Xst:647 - Input <address<5:4>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:1781 - Signal <ROM> is used but never assigned. Tied to default value.
+    Found 10x8-bit ROM for signal <$varindex0000> created at line 41.
+    Found 8-bit tristate buffer for signal <dataout>.
+    Summary:
+	inferred   1 ROM(s).
+	inferred   8 Tristate(s).
+Unit <MEM> synthesized.
+
+
+Synthesizing Unit <Counter4>.
+    Related source file is "/media/raven/yaoya_rozo/Semster-6/ISE/CA-Project3/Counter4.vhd".
+    Found 3-bit up counter for signal <count>.
+    Summary:
+	inferred   1 Counter(s).
+Unit <Counter4> synthesized.
+
+
+Synthesizing Unit <Encoder8x3>.
+    Related source file is "/media/raven/yaoya_rozo/Semster-6/ISE/CA-Project3/Encoder8X3.vhd".
+WARNING:Xst:647 - Input <d<0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <Encoder8x3> synthesized.
+
+
+Synthesizing Unit <Encoder4X2>.
+    Related source file is "/media/raven/yaoya_rozo/Semster-6/ISE/CA-Project3/Encoder4X2.vhd".
+    Found 2-bit tristate buffer for signal <b>.
+    Summary:
+	inferred   2 Tristate(s).
+Unit <Encoder4X2> synthesized.
+
+
+Synthesizing Unit <MUX4X1_v8>.
+    Related source file is "/media/raven/yaoya_rozo/Semster-6/ISE/CA-Project3/MUX4X1_v8.vhd".
+    Found 8-bit 4-to-1 multiplexer for signal <o>.
+    Summary:
+	inferred   8 Multiplexer(s).
+Unit <MUX4X1_v8> synthesized.
+
+
+Synthesizing Unit <DEC2X4>.
+    Related source file is "/media/raven/yaoya_rozo/Semster-6/ISE/CA-Project3/DEC2X4.vhd".
+WARNING:Xst:647 - Input <en> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 1-of-4 decoder for signal <o>.
+    Summary:
+	inferred   1 Decoder(s).
+Unit <DEC2X4> synthesized.
+
+
+Synthesizing Unit <DEC3X8>.
+    Related source file is "/media/raven/yaoya_rozo/Semster-6/ISE/CA-Project3/DEC3X8.vhd".
+WARNING:Xst:647 - Input <en> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 1-of-8 decoder for signal <o>.
+    Summary:
+	inferred   1 Decoder(s).
+Unit <DEC3X8> synthesized.
+
+
+Synthesizing Unit <MUX8X1_v8>.
+    Related source file is "/media/raven/yaoya_rozo/Semster-6/ISE/CA-Project3/MUX8X1_v8.vhd".
+    Found 8-bit 8-to-1 multiplexer for signal <o>.
+    Summary:
+	inferred   8 Multiplexer(s).
+Unit <MUX8X1_v8> synthesized.
+
+
+Synthesizing Unit <ALU>.
+    Related source file is "/media/raven/yaoya_rozo/Semster-6/ISE/CA-Project3/ALU.vhd".
+    Found 8-bit tristate buffer for signal <$const0000>.
+    Found 8-bit adder for signal <ACplusDR>.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   8 Tristate(s).
+Unit <ALU> synthesized.
+
+
+Synthesizing Unit <Control_Unit>.
+    Related source file is "/media/raven/yaoya_rozo/Semster-6/ISE/CA-Project3/Control_Unit.vhd".
+WARNING:Xst:1305 - Output <BUS_ENC_OUT<7>> is never assigned. Tied to value 0.
+WARNING:Xst:1305 - Output <BUS_ENC_OUT<4:3>> is never assigned. Tied to value 00.
+WARNING:Xst:1305 - Output <BUS_ENC_OUT<0>> is never assigned. Tied to value 0.
+WARNING:Xst:646 - Signal <Tout<7:5>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <Control_Unit> synthesized.
+
+
+Synthesizing Unit <COM_BUS>.
+    Related source file is "/media/raven/yaoya_rozo/Semster-6/ISE/CA-Project3/COM_BUS.vhd".
+WARNING:Xst:653 - Signal <DATA_NULL> is used but never assigned. This sourceless signal will be automatically connected to value 00000000.
+Unit <COM_BUS> synthesized.
+
+
+Synthesizing Unit <main>.
+    Related source file is "/media/raven/yaoya_rozo/Semster-6/ISE/CA-Project3/main.vhd".
+WARNING:Xst:1780 - Signal <BUS_OUT<7>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:653 - Signal <BUS_OUT<6>> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:1780 - Signal <BUS_OUT<5:0>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+Unit <main> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 10x8-bit ROM                                          : 1
+# Adders/Subtractors                                   : 6
+ 8-bit adder                                           : 1
+ 8-bit addsub                                          : 5
+# Counters                                             : 1
+ 3-bit up counter                                      : 1
+# Registers                                            : 5
+ 8-bit register                                        : 5
+# Multiplexers                                         : 2
+ 8-bit 4-to-1 multiplexer                              : 1
+ 8-bit 8-to-1 multiplexer                              : 1
+# Decoders                                             : 2
+ 1-of-4 decoder                                        : 1
+ 1-of-8 decoder                                        : 1
+# Tristates                                            : 10
+ 1-bit tristate buffer                                 : 8
+ 2-bit tristate buffer                                 : 1
+ 8-bit tristate buffer                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1290 - Hierarchical block <AR> is unconnected in block <main>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <PC> is unconnected in block <main>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <DR> is unconnected in block <main>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <AC> is unconnected in block <main>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <IR> is unconnected in block <main>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <M> is unconnected in block <main>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <ALU_UNIT> is unconnected in block <main>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <T_COUNTER> is unconnected in block <main>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <CU> is unconnected in block <main>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <BUS_ENCODER> is unconnected in block <main>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <COMMON_BUS> is unconnected in block <main>.
+   It will be removed from the design.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 10x8-bit ROM                                          : 1
+# Adders/Subtractors                                   : 6
+ 8-bit adder                                           : 1
+ 8-bit addsub                                          : 5
+# Counters                                             : 1
+ 3-bit up counter                                      : 1
+# Registers                                            : 40
+ Flip-Flops                                            : 40
+# Multiplexers                                         : 2
+ 8-bit 4-to-1 multiplexer                              : 1
+ 8-bit 8-to-1 multiplexer                              : 1
+# Decoders                                             : 2
+ 1-of-4 decoder                                        : 1
+ 1-of-8 decoder                                        : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:2042 - Unit MEM: 8 internal tristates are replaced by logic (pull-up yes): dataout<0>, dataout<1>, dataout<2>, dataout<3>, dataout<4>, dataout<5>, dataout<6>, dataout<7>.
+WARNING:Xst:2042 - Unit Encoder4X2: 2 internal tristates are replaced by logic (pull-up yes): b<0>, b<1>.
+
+Optimizing unit <main> ...
+
+Optimizing unit <REG> ...
+
+Optimizing unit <MEM> ...
+
+Optimizing unit <Encoder4X2> ...
+
+Optimizing unit <ALU> ...
+WARNING:Xst:2677 - Node <T_COUNTER/count_2> of sequential type is unconnected in block <main>.
+WARNING:Xst:2677 - Node <T_COUNTER/count_1> of sequential type is unconnected in block <main>.
+WARNING:Xst:2677 - Node <T_COUNTER/count_0> of sequential type is unconnected in block <main>.
+WARNING:Xst:2677 - Node <IR/temp_7> of sequential type is unconnected in block <main>.
+WARNING:Xst:2677 - Node <IR/temp_6> of sequential type is unconnected in block <main>.
+WARNING:Xst:2677 - Node <IR/temp_5> of sequential type is unconnected in block <main>.
+WARNING:Xst:2677 - Node <IR/temp_4> of sequential type is unconnected in block <main>.
+WARNING:Xst:2677 - Node <IR/temp_3> of sequential type is unconnected in block <main>.
+WARNING:Xst:2677 - Node <IR/temp_2> of sequential type is unconnected in block <main>.
+WARNING:Xst:2677 - Node <IR/temp_1> of sequential type is unconnected in block <main>.
+WARNING:Xst:2677 - Node <IR/temp_0> of sequential type is unconnected in block <main>.
+WARNING:Xst:2677 - Node <AC/temp_7> of sequential type is unconnected in block <main>.
+WARNING:Xst:2677 - Node <AC/temp_6> of sequential type is unconnected in block <main>.
+WARNING:Xst:2677 - Node <AC/temp_5> of sequential type is unconnected in block <main>.
+WARNING:Xst:2677 - Node <AC/temp_4> of sequential type is unconnected in block <main>.
+WARNING:Xst:2677 - Node <AC/temp_3> of sequential type is unconnected in block <main>.
+WARNING:Xst:2677 - Node <AC/temp_2> of sequential type is unconnected in block <main>.
+WARNING:Xst:2677 - Node <AC/temp_1> of sequential type is unconnected in block <main>.
+WARNING:Xst:2677 - Node <AC/temp_0> of sequential type is unconnected in block <main>.
+WARNING:Xst:2677 - Node <DR/temp_7> of sequential type is unconnected in block <main>.
+WARNING:Xst:2677 - Node <DR/temp_6> of sequential type is unconnected in block <main>.
+WARNING:Xst:2677 - Node <DR/temp_5> of sequential type is unconnected in block <main>.
+WARNING:Xst:2677 - Node <DR/temp_4> of sequential type is unconnected in block <main>.
+WARNING:Xst:2677 - Node <DR/temp_3> of sequential type is unconnected in block <main>.
+WARNING:Xst:2677 - Node <DR/temp_2> of sequential type is unconnected in block <main>.
+WARNING:Xst:2677 - Node <DR/temp_1> of sequential type is unconnected in block <main>.
+WARNING:Xst:2677 - Node <DR/temp_0> of sequential type is unconnected in block <main>.
+WARNING:Xst:2677 - Node <PC/temp_7> of sequential type is unconnected in block <main>.
+WARNING:Xst:2677 - Node <PC/temp_6> of sequential type is unconnected in block <main>.
+WARNING:Xst:2677 - Node <PC/temp_5> of sequential type is unconnected in block <main>.
+WARNING:Xst:2677 - Node <PC/temp_4> of sequential type is unconnected in block <main>.
+WARNING:Xst:2677 - Node <PC/temp_3> of sequential type is unconnected in block <main>.
+WARNING:Xst:2677 - Node <PC/temp_2> of sequential type is unconnected in block <main>.
+WARNING:Xst:2677 - Node <PC/temp_1> of sequential type is unconnected in block <main>.
+WARNING:Xst:2677 - Node <PC/temp_0> of sequential type is unconnected in block <main>.
+WARNING:Xst:2677 - Node <AR/temp_7> of sequential type is unconnected in block <main>.
+WARNING:Xst:2677 - Node <AR/temp_6> of sequential type is unconnected in block <main>.
+WARNING:Xst:2677 - Node <AR/temp_5> of sequential type is unconnected in block <main>.
+WARNING:Xst:2677 - Node <AR/temp_4> of sequential type is unconnected in block <main>.
+WARNING:Xst:2677 - Node <AR/temp_3> of sequential type is unconnected in block <main>.
+WARNING:Xst:2677 - Node <AR/temp_2> of sequential type is unconnected in block <main>.
+WARNING:Xst:2677 - Node <AR/temp_1> of sequential type is unconnected in block <main>.
+WARNING:Xst:2677 - Node <AR/temp_0> of sequential type is unconnected in block <main>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block main, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : main.ngr
+Top Level Output File Name         : main
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 2
+
+Cell Usage :
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s100evq100-5 
+
+ Number of Slices:                        0  out of    960     0%  
+ Number of IOs:                           2
+ Number of bonded IOBs:                   0  out of     66     0%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+No clock signals found in this design
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: No path found
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 3.00 secs
+Total CPU time to Xst completion: 2.40 secs
+ 
+--> 
+
+
+Total memory usage is 546172 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   71 (   0 filtered)
+Number of infos    :    2 (   0 filtered)
+

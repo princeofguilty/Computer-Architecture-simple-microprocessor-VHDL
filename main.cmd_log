@@ -1,0 +1,3 @@
+xst -intstyle ise -ifn "/media/raven/yaoya_rozo/Semster-6/ISE/CA-Project3/main.xst" -ofn "/media/raven/yaoya_rozo/Semster-6/ISE/CA-Project3/main.syr" 
+xst -intstyle ise -ifn "/media/raven/yaoya_rozo/Semster-6/ISE/CA-Project3/main.xst" -ofn "/media/raven/yaoya_rozo/Semster-6/ISE/CA-Project3/main.syr" 
+xst -intstyle ise -ifn "/media/raven/yaoya_rozo/Semster-6/ISE/CA-Project3/main.xst" -ofn "/media/raven/yaoya_rozo/Semster-6/ISE/CA-Project3/main.syr" 
