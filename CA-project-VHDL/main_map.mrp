@@ -1,0 +1,29 @@
+Release 14.5 Map P.58f (nt64)
+Xilinx Mapping Report File for Design 'main'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xa7a100t-csg324-2I -w -logic_opt off -ol
+high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off
+-power off -o main_map.ncd main.ngd main.pcf 
+Target Device  : xa7a100t
+Target Package : csg324
+Target Speed   : -2i
+Mapper Version : aartix7 -- $Revision: 1.55 $
+Mapped Date    : Thu Jun 03 13:23:34 2021
+
+Design Summary
+--------------
+Number of errors   :   2
+Number of warnings :   0
+
+Section 1 - Errors
+------------------
+ERROR:Map:116 - The design is empty.  No processing will be done.
+ERROR:Map:52 - Problem encountered processing RPMs. 
+
+Section 2 - Warnings
+--------------------
+
+Section 3 - Informational
+-------------------------

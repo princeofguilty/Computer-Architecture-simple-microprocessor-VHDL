@@ -1,0 +1,4 @@
+vhdl work "Pack.vhd"
+vhdl work "DEC3X8.vhd"
+vhdl work "DEC2X4.vhd"
+vhdl work "Control_Unit.vhd"

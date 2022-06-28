@@ -1,0 +1,11 @@
+ISim log file
+Running: C:\Users\DELL\OneDrive\Desktop\CompArch_project\CA-project\TEST_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/Users/DELL/OneDrive/Desktop/CompArch_project/CA-project/TEST_isim_beh.wdb 
+ISim P.58f (signature 0x7708f090)
+This is a Full version of ISim.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 60us
+Simulator is doing circuit initialization process.
+at 0 ps, Instance /test/uut/ALU_UNIT/ : Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+Finished circuit initialization process.

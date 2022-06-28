@@ -1,0 +1,48 @@
+Running: C:\Xilinx\14.5\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib secureip -o C:/Users/DELL/OneDrive/Desktop/CompArch_project/CA-project/TEST_isim_beh.exe -prj C:/Users/DELL/OneDrive/Desktop/CompArch_project/CA-project/TEST_beh.prj work.TEST 
+ISim P.58f (signature 0x7708f090)
+Number of CPUs detected in this system: 12
+Turning on mult-threading, number of parallel sub-compilation jobs: 24 
+Determining compilation order of HDL files
+Parsing VHDL file "C:/Users/DELL/OneDrive/Desktop/CompArch_project/CA-project/Pack.vhd" into library work
+Parsing VHDL file "C:/Users/DELL/OneDrive/Desktop/CompArch_project/CA-project/MUX8X1_v8.vhd" into library work
+Parsing VHDL file "C:/Users/DELL/OneDrive/Desktop/CompArch_project/CA-project/MUX4X1_v8.vhd" into library work
+Parsing VHDL file "C:/Users/DELL/OneDrive/Desktop/CompArch_project/CA-project/Encoder4X2.vhd" into library work
+Parsing VHDL file "C:/Users/DELL/OneDrive/Desktop/CompArch_project/CA-project/DEC3X8.vhd" into library work
+Parsing VHDL file "C:/Users/DELL/OneDrive/Desktop/CompArch_project/CA-project/DEC2X4.vhd" into library work
+Parsing VHDL file "C:/Users/DELL/OneDrive/Desktop/CompArch_project/CA-project/REG.vhd" into library work
+Parsing VHDL file "C:/Users/DELL/OneDrive/Desktop/CompArch_project/CA-project/MEM.vhd" into library work
+Parsing VHDL file "C:/Users/DELL/OneDrive/Desktop/CompArch_project/CA-project/Encoder8X3.vhd" into library work
+Parsing VHDL file "C:/Users/DELL/OneDrive/Desktop/CompArch_project/CA-project/Counter4.vhd" into library work
+Parsing VHDL file "C:/Users/DELL/OneDrive/Desktop/CompArch_project/CA-project/Control_Unit.vhd" into library work
+Parsing VHDL file "C:/Users/DELL/OneDrive/Desktop/CompArch_project/CA-project/COM_BUS.vhd" into library work
+Parsing VHDL file "C:/Users/DELL/OneDrive/Desktop/CompArch_project/CA-project/ALU.vhd" into library work
+Parsing VHDL file "C:/Users/DELL/OneDrive/Desktop/CompArch_project/CA-project/main.vhd" into library work
+Parsing VHDL file "C:/Users/DELL/OneDrive/Desktop/CompArch_project/CA-project/TEST.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package pack
+Compiling package std_logic_arith
+Compiling package std_logic_unsigned
+Compiling architecture behavioral of entity REG [\REG(8)\]
+Compiling architecture behavioral of entity MEM [mem_default]
+Compiling architecture bhv of entity Encoder4X2 [encoder4x2_default]
+Compiling architecture behavioral of entity MUX4X1_v8 [mux4x1_v8_default]
+Compiling architecture behavioral of entity ALU [alu_default]
+Compiling architecture count_arch of entity Counter4 [counter4_default]
+Compiling architecture behavioral of entity DEC3X8 [dec3x8_default]
+Compiling architecture behavioral of entity DEC2X4 [dec2x4_default]
+Compiling architecture behavioral of entity Control_Unit [control_unit_default]
+Compiling architecture encode of entity Encoder8x3 [encoder8x3_default]
+Compiling architecture behavioral of entity MUX8X1_v8 [mux8x1_v8_default]
+Compiling architecture behavioral of entity COM_BUS [com_bus_default]
+Compiling architecture behavioral of entity main [main_default]
+Compiling architecture behavior of entity test
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+WARNING:Simulator - Unable to copy libPortabilityNOSH.dll to the simulation executable directory: boost::filesystem::copy_file: The system cannot find the path specified, "isim\TEST_isim_beh.exe.sim\libPortability.dll".
+Compiled 32 VHDL Units
+Built simulation executable C:/Users/DELL/OneDrive/Desktop/CompArch_project/CA-project/TEST_isim_beh.exe
+Fuse Memory Usage: 35368 KB
+Fuse CPU Usage: 1312 ms

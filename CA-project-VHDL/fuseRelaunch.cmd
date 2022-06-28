@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "C:/Users/DELL/OneDrive/Desktop/CompArch_project/CA-project/TEST_isim_beh.exe" -prj "C:/Users/DELL/OneDrive/Desktop/CompArch_project/CA-project/TEST_beh.prj" "work.TEST" 

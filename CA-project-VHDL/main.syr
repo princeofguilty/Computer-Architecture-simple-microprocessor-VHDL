@@ -1,0 +1,369 @@
+Release 14.5 - xst P.58f (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.24 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.24 secs
+ 
+--> Reading design: main.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "main.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "main"
+Output Format                      : NGC
+Target Device                      : xa7a100t-2I-csg324
+
+---- Source Options
+Top Module Name                    : main
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "C:\Users\DELL\OneDrive\Desktop\proj\CA-project\Pack.vhd" into library work
+Parsing package <Pack>.
+Parsing package body <Pack>.
+Parsing VHDL file "C:\Users\DELL\OneDrive\Desktop\proj\CA-project\MUX8X1_v8.vhd" into library work
+Parsing entity <MUX8X1_v8>.
+Parsing architecture <Behavioral> of entity <mux8x1_v8>.
+Parsing VHDL file "C:\Users\DELL\OneDrive\Desktop\proj\CA-project\MUX4X1_v8.vhd" into library work
+Parsing entity <MUX4X1_v8>.
+Parsing architecture <Behavioral> of entity <mux4x1_v8>.
+Parsing VHDL file "C:\Users\DELL\OneDrive\Desktop\proj\CA-project\Encoder4X2.vhd" into library work
+Parsing entity <Encoder4X2>.
+Parsing architecture <bhv> of entity <encoder4x2>.
+Parsing VHDL file "C:\Users\DELL\OneDrive\Desktop\proj\CA-project\DEC3X8.vhd" into library work
+Parsing entity <DEC3X8>.
+Parsing architecture <Behavioral> of entity <dec3x8>.
+Parsing VHDL file "C:\Users\DELL\OneDrive\Desktop\proj\CA-project\DEC2X4.vhd" into library work
+Parsing entity <DEC2X4>.
+Parsing architecture <Behavioral> of entity <dec2x4>.
+Parsing VHDL file "C:\Users\DELL\OneDrive\Desktop\proj\CA-project\REG.vhd" into library work
+Parsing entity <REG>.
+Parsing architecture <Behavioral> of entity <reg>.
+Parsing VHDL file "C:\Users\DELL\OneDrive\Desktop\proj\CA-project\MEM.vhd" into library work
+Parsing entity <MEM>.
+Parsing architecture <Behavioral> of entity <mem>.
+Parsing VHDL file "C:\Users\DELL\OneDrive\Desktop\proj\CA-project\Encoder8X3.vhd" into library work
+Parsing entity <Encoder8x3>.
+Parsing architecture <encode> of entity <encoder8x3>.
+Parsing VHDL file "C:\Users\DELL\OneDrive\Desktop\proj\CA-project\Counter4.vhd" into library work
+Parsing entity <Counter4>.
+Parsing architecture <count_arch> of entity <counter4>.
+Parsing VHDL file "C:\Users\DELL\OneDrive\Desktop\proj\CA-project\Control_Unit.vhd" into library work
+Parsing entity <Control_Unit>.
+Parsing architecture <Behavioral> of entity <control_unit>.
+Parsing VHDL file "C:\Users\DELL\OneDrive\Desktop\proj\CA-project\COM_BUS.vhd" into library work
+Parsing entity <COM_BUS>.
+Parsing architecture <Behavioral> of entity <com_bus>.
+Parsing VHDL file "C:\Users\DELL\OneDrive\Desktop\proj\CA-project\ALU.vhd" into library work
+Parsing entity <ALU>.
+Parsing architecture <Behavioral> of entity <alu>.
+Parsing VHDL file "C:\Users\DELL\OneDrive\Desktop\proj\CA-project\main.vhd" into library work
+Parsing entity <main>.
+Parsing architecture <Behavioral> of entity <main>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <main> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <REG> (architecture <Behavioral>) with generics from library <work>.
+
+Elaborating entity <MEM> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <ALU> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <Encoder4X2> (architecture <bhv>) from library <work>.
+
+Elaborating entity <MUX4X1_v8> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <Counter4> (architecture <count_arch>) from library <work>.
+
+Elaborating entity <Control_Unit> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <DEC3X8> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <DEC2X4> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <Encoder8x3> (architecture <encode>) from library <work>.
+
+Elaborating entity <COM_BUS> (architecture <Behavioral>) from library <work>.
+WARNING:HDLCompiler:871 - "C:\Users\DELL\OneDrive\Desktop\proj\CA-project\COM_BUS.vhd" Line 22: Using initial value "ZZZZZZZZ" for data_null since it is never assigned
+
+Elaborating entity <MUX8X1_v8> (architecture <Behavioral>) from library <work>.
+WARNING:Xst:2972 - "C:\Users\DELL\OneDrive\Desktop\proj\CA-project\main.vhd" line 59. All outputs of instance <AR> of block <REG> are unconnected in block <main>. Underlying logic will be removed.
+WARNING:Xst:2972 - "C:\Users\DELL\OneDrive\Desktop\proj\CA-project\main.vhd" line 60. All outputs of instance <PC> of block <REG> are unconnected in block <main>. Underlying logic will be removed.
+WARNING:Xst:2972 - "C:\Users\DELL\OneDrive\Desktop\proj\CA-project\main.vhd" line 61. All outputs of instance <DR> of block <REG> are unconnected in block <main>. Underlying logic will be removed.
+WARNING:Xst:2972 - "C:\Users\DELL\OneDrive\Desktop\proj\CA-project\main.vhd" line 62. All outputs of instance <AC> of block <REG> are unconnected in block <main>. Underlying logic will be removed.
+WARNING:Xst:2972 - "C:\Users\DELL\OneDrive\Desktop\proj\CA-project\main.vhd" line 63. All outputs of instance <IR> of block <REG> are unconnected in block <main>. Underlying logic will be removed.
+WARNING:Xst:2972 - "C:\Users\DELL\OneDrive\Desktop\proj\CA-project\main.vhd" line 64. All outputs of instance <M> of block <MEM> are unconnected in block <main>. Underlying logic will be removed.
+WARNING:Xst:2972 - "C:\Users\DELL\OneDrive\Desktop\proj\CA-project\main.vhd" line 70. All outputs of instance <ALU_UNIT> of block <ALU> are unconnected in block <main>. Underlying logic will be removed.
+WARNING:Xst:2972 - "C:\Users\DELL\OneDrive\Desktop\proj\CA-project\main.vhd" line 75. All outputs of instance <T_COUNTER> of block <Counter4> are unconnected in block <main>. Underlying logic will be removed.
+WARNING:Xst:2972 - "C:\Users\DELL\OneDrive\Desktop\proj\CA-project\main.vhd" line 78. All outputs of instance <CU> of block <Control_Unit> are unconnected in block <main>. Underlying logic will be removed.
+WARNING:Xst:2972 - "C:\Users\DELL\OneDrive\Desktop\proj\CA-project\main.vhd" line 81. All outputs of instance <BUS_ENCODER> of block <Encoder8x3> are unconnected in block <main>. Underlying logic will be removed.
+WARNING:Xst:2972 - "C:\Users\DELL\OneDrive\Desktop\proj\CA-project\main.vhd" line 84. All outputs of instance <COMMON_BUS> of block <COM_BUS> are unconnected in block <main>. Underlying logic will be removed.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <main>.
+    Related source file is "C:\Users\DELL\OneDrive\Desktop\proj\CA-project\main.vhd".
+    Summary:
+	no macro.
+Unit <main> synthesized.
+
+Synthesizing Unit <Encoder4X2>.
+    Related source file is "C:\Users\DELL\OneDrive\Desktop\proj\CA-project\Encoder4X2.vhd".
+    Summary:
+	no macro.
+Unit <Encoder4X2> synthesized.
+
+Synthesizing Unit <MUX4X1_v8>.
+    Related source file is "C:\Users\DELL\OneDrive\Desktop\proj\CA-project\MUX4X1_v8.vhd".
+    Summary:
+	no macro.
+Unit <MUX4X1_v8> synthesized.
+
+Synthesizing Unit <DEC3X8>.
+    Related source file is "C:\Users\DELL\OneDrive\Desktop\proj\CA-project\DEC3X8.vhd".
+WARNING:Xst:647 - Input <en> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	no macro.
+Unit <DEC3X8> synthesized.
+
+Synthesizing Unit <DEC2X4>.
+    Related source file is "C:\Users\DELL\OneDrive\Desktop\proj\CA-project\DEC2X4.vhd".
+WARNING:Xst:647 - Input <en> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	no macro.
+Unit <DEC2X4> synthesized.
+
+Synthesizing Unit <MUX8X1_v8>.
+    Related source file is "C:\Users\DELL\OneDrive\Desktop\proj\CA-project\MUX8X1_v8.vhd".
+    Summary:
+	no macro.
+Unit <MUX8X1_v8> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst - The specified part-type was not generated at build time. XST is loading the full part-type and will therefore consume more CPU and memory.
+Loading device for application Rf_Device from file '7a100t.nph' in environment C:\Xilinx\14.5\ISE_DS\ISE\.
+Loading device for application Rf_Device from file '7a100t.nph' in environment C:\Xilinx\14.5\ISE_DS\ISE\.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <main> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block main, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : main.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+
+Device utilization summary:
+---------------------------
+
+Selected Device : xa7a100tcsg324-2i 
+
+
+Slice Logic Utilization: 
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:      0
+   Number with an unused Flip Flop:       0  out of      0         
+   Number with an unused LUT:             0  out of      0         
+   Number of fully used LUT-FF pairs:     0  out of      0         
+   Number of unique control sets:         0
+
+IO Utilization: 
+ Number of IOs:                           2
+ Number of bonded IOBs:                   0  out of    210     0%  
+
+Specific Feature Utilization:
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+No clock signals found in this design
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: No path found
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 40.00 secs
+Total CPU time to Xst completion: 40.45 secs
+ 
+--> 
+
+Total memory usage is 5071248 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   15 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

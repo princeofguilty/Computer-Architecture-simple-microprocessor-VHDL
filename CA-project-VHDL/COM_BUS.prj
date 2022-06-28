@@ -1,0 +1,3 @@
+vhdl work "Pack.vhd"
+vhdl work "MUX8X1_v8.vhd"
+vhdl work "COM_BUS.vhd"
